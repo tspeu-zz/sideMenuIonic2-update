@@ -1,0 +1,37 @@
+{
+	"accounts": [
+		{
+	      	"title": "Share Accounts",
+	      	"type": "Special Share Account",
+			"joint": "No",
+			"iban": "IE64SRFD 995000 87654321",
+			"maturiry date": "N/A",
+			"balance": "100"
+	    },
+	      {
+	      	"title": "Share Accounts",
+	      	"type": "Special Share Account",
+			"joint": "No",
+			"iban": "IE64SRFD 12356 55555555",
+			"maturiry date": "N/A",
+			"balance": "1800"
+	    },
+	    {	      
+	      	"title": "Current Accounts",
+	      	"type": "Disbursal Account",
+			"joint": "No",
+			"iban": "IE88OUIP 978888 12345678",
+			"maturiry date": "N/A",
+			"balance": "200"
+	    }
+	],
+	
+	"Diferent" :[{
+
+			"money": 	44563,
+			"someting": 11111,
+			"stuff": 	875454,
+			"links":	"www.stharafeals.com"
+
+		}]
+}

@@ -1,0 +1,21 @@
+{
+"_parraf": 
+	 	{
+	 		"_legend": "This page shows a summary of all the Share accounts you hold with St Raphael's Garda Union Ltd.",
+	 		"_action": "Click on account below to view your most recent transactions"
+	 	},
+
+"_account": [
+ 	{
+ 		"_accountType": "Share  ",
+ 		"_accountTypeName": "Special Share Account  ",
+ 		"_accountIBAN": "IE72SRGC  ",
+ 		"_accountNumber": "01667261  ",
+ 		"_accountSortCode": "991000  ",
+ 		"_accountJoint": "No  ",
+ 		"_accountMaturityDate": "  ",
+ 		"_accountBalance": "8.02  "
+ 	}
+ ]
+
+ }

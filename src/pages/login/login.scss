@@ -1,0 +1,101 @@
+.logo-header-img{
+   text-align: center; 
+
+}
+
+
+.login-page .logo {
+  background-color: #005b91;
+  padding: 5px ;
+  min-height: 5px;
+  text-align: center;
+  color: #fff;
+}
+.login-page .labe2{
+  font-size: 16px;
+
+}
+.login-page .labe1{
+  font-size: 18px; 
+  color : color($colors, primary);
+}
+
+/*.login-page .logo-img {
+   //background-color: #fff;
+   //max-width: 250px;
+   //min-height: 50px;
+   //margin-left: -15px;
+   //padding: 25px 0 20px 0;
+
+}
+*/
+.login-page .logoimg {
+  background-color: #fff;
+   max-width: 80%;
+   //min-height: 30px;
+   //margin-left: 35px;
+   //margin-right: -300px;
+   //text-align: center;
+   margin-top: -15px;
+   position: relative;
+    
+   //padding: 0px 0 0px 0;
+}
+
+.background {
+  background-color: #fff;
+    //width: 80vw; 
+    //height:80vh; 
+    text-align: center;
+    margin-top: 15px;
+   // position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+
+     //display: block;
+  //width: 50vw;
+  //height: 50vh;
+  //object-fit: cover;
+}
+
+.stretch {
+    width:80%;
+    height:30%;
+   
+}
+
+.logo-img-card{
+    margin: 0;
+    padding: 0;
+}
+.logo-img-card .slider {
+    display: flex;
+}
+.logo-img-card .slider .slide img {
+    width: 100%;
+}
+
+.login-page .ion-card-img {
+    position: relative;
+    text-align: center;
+
+
+  }
+
+  .login-page .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #005b91;
+  }
+
+  .login-page .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #005b91;
+  }
