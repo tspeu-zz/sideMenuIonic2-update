@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="betwMyA">
+  <div class="logo">
+     <h1>Transfer between my accounts</h1>
+  </div>
+
+<ion-card> 
+  <ion-item-group class="text-label">
+
+    <ion-item class="text-label">
+      <ion-label color="primary">From Account</ion-label>
+      <ion-select [(ngModel)]="fromAccount"  okText="Continue" cancelText="Cancel"><!--multiple="true"-->
+        <ion-option value="share">Share</ion-option>
+        <ion-option value="current">Current</ion-option>
+        <ion-option value="other">Other</ion-option>       
+        </ion-select>
+    </ion-item>
+
+    <ion-item class="text-label">
+      <ion-label color="primary">To Account</ion-label>
+      <ion-select [(ngModel)]="toAccount"  okText="Continue" cancelText="Cancel"><!--multiple="true"-->
+        <ion-option value="share">Share</ion-option>
+        <ion-option value="current">Current</ion-option>
+        <ion-option value="other">Other</ion-option>       
+        </ion-select>
+    </ion-item>
+	
+	<ion-item class="text-label">
+		<ion-label color="primary">Reason:</ion-label>
+		<ion-textarea text-wrap placeholder="reason for transfer" [(ngModel)]="msg" class="text-label2"></ion-textarea>
+	</ion-item>
+
+	<ion-item >
+		<ion-label color="primary" class="text-label">Amount:</ion-label>
+		<ion-input text-right type="number" placeholder="enter here" [(ngModel)]="amount" class="text-label"></ion-input>
+		<ion-select [(ngModel)]="typeMoney"  okText="Continue" cancelText="Cancel"><!--multiple="true"-->
+        <ion-option value="€">€</ion-option>
+        <ion-option value="$">$</ion-option>
+        <ion-option value="£">£</ion-option>       
+        </ion-select>
+	</ion-item>
+
+ 	<ion-item class="text-label">
+        <ion-label color="primary">Date:</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY"  min="2016" max="2018-12-31"[(ngModel)]="transferDate"></ion-datetime>
+      </ion-item>
+
+
+
+   </ion-item-group> 
+
+	
+
+</ion-card>  
+	<div>  
+      <button ion-button color="primary" menuToggle >Menu</button>
+      <button ion-button color="danger" navPop>Cancel</button>
+      <button ion-button color="continue" (click)="gotoModal()">Continue</button>
+  	</div>
+
+</ion-content>

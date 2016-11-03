@@ -7,6 +7,14 @@ import {LoginPage, SignupPage, TabsPage }  from '../pages/index';
 import {LoginProvider} from '../providers/index';
 
 import {AccountsPage, CurrentPage, ShareAccount} from '../pages/models/index';
+import {ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage } from '../pages/sidemenu/index';
+
+import {Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA} from '../pages/sidemenu/transfer-money/index';
+
+//import {ModalBetwA} from '../pages/sidemenu/transfer-money/paybill/index';
+//import {ModalBetwA} from '../pages/sidemenu/transfer-money/paybill/index';
+
+
 
 @NgModule({
   declarations: [
@@ -14,7 +22,9 @@ import {AccountsPage, CurrentPage, ShareAccount} from '../pages/models/index';
     Page1,
     Page2,
     LoginPage, SignupPage, TabsPage,
-    AccountsPage, CurrentPage, ShareAccount
+    AccountsPage, CurrentPage, ShareAccount,
+    ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage,
+    Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -25,7 +35,9 @@ import {AccountsPage, CurrentPage, ShareAccount} from '../pages/models/index';
     Page1,
     Page2,
     LoginPage, SignupPage, TabsPage,
-    AccountsPage, CurrentPage, ShareAccount
+    AccountsPage, CurrentPage, ShareAccount,
+    ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage,
+    Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA
   ],
   providers: [LoginProvider]
 })

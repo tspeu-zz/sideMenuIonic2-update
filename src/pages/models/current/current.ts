@@ -5,6 +5,8 @@ import {Component,  OnInit} from '@angular/core';
 //import {RtcurrentPage} from '../rtcurrent/rtcurrent';
 //import {LoginPage} from '../login/login';
 import {LoginPage} from '../../index';
+//import {RtcurrentPage} from './rtcurrent/index';
+
 
 @Component({
   templateUrl: 'current.html',

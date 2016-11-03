@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="standing-orders">
+  <div class="logo">
+      <h1>Standing Orders</h1>
+  </div> 
+
+<div>
+  <ion-list>
+    <!-- <ion-item-divider text-wrap class="header-table">
+      <ion-row >
+        <ion-col><div>From Account</div></ion-col>
+        <ion-col><div>To Account</div></ion-col>
+        <ion-col><div>Date</div></ion-col>
+        <ion-col><div>Frecuency</div></ion-col>
+      </ion-row>
+    </ion-item-divider>
+
+    <ion-item-sliding text-wrap>
+        <ion-item class="text-content">
+         <ion-row >
+          <ion-col><div>0166761</div></ion-col>
+          <ion-col><div>01721838</div></ion-col>
+          <ion-col><div>30-04-2016</div></ion-col>
+          <ion-col><div>Weekly</div></ion-col>
+         </ion-row> 
+        </ion-item>
+      <ion-item-options>
+        <button secondary (click)="editOrders()">
+          <ion-icon name="md-create"></ion-icon>
+          Edit
+        </button>
+        <button danger (click)="deletedOrders()">
+          <ion-icon name="md-trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding text-wrap>
+        <ion-item class="text-content">
+         <ion-row secondary>
+          <ion-col><div>01721838</div></ion-col>
+          <ion-col><div>01667261</div></ion-col>
+          <ion-col><div>23-04-2016</div></ion-col>
+          <ion-col><div>Fortnightly</div></ion-col>
+         </ion-row> 
+        </ion-item>
+      <ion-item-options>
+        <button secondary (click)="editOrders()">
+          <ion-icon name="md-create"></ion-icon>
+          Edit
+        </button>
+        <button danger (click)="deletedOrders()">
+          <ion-icon name="md-trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding> -->
+  <div>
+    <ion-card>
+     <ion-card-header class="headerCard">
+        <ion-icon name="md-git-compare"></ion-icon> STANDING ORDERS
+     </ion-card-header>
+        <div class="Rtable Rtable--3cols">
+
+          <div style="order:0;" class="Rtable-cell Rtable-cell--head">
+             <h3> <strong>Source Account</strong></h3>
+          </div>
+
+           <div style="order:0;" class="Rtable-cell Rtable-cell--head">
+               <h3><strong>Payee</strong></h3>
+          </div>
+
+          <div style="order:0;" class="Rtable-cell Rtable-cell--head">
+            <h3><strong>Status</strong></h3>
+          </div>
+
+          <div style="order:1;" class="Rtable-cell" >-FLEXI </div>
+          <div style="order:1;" class="Rtable-cell">ESB2 </div>
+          <div style="order:1; color:green;" class="Rtable-cell">Active</div>
+
+          <div style="order:2; color:blue ;font-size:12px" class="Rtable-cell">Frecuency:</div>
+          <div style="order:2; color:blue ;font-size:12px" class="Rtable-cell">Amount:</div>
+          <div style="order:2; color:blue ;font-size:12px" class="Rtable-cell">Next Date:</div> 
+
+          <div style="order:3;" class="Rtable-cell Rtable-cell">Montly</div>
+          <div style="order:3;" class="Rtable-cell Rtable-cell"> € 1.00</div>
+          <div style="order:3;" class="Rtable-cell Rtable-cell">20/01/2016</div>
+
+        </div>
+
+      <ion-card-header class="headerCard">
+          <ion-icon name="md-git-compare"></ion-icon>   STANDING ORDERS
+      </ion-card-header>
+
+    </ion-card>
+  </div>
+ </ion-list>
+</div>
+
+  <!-- <div padding>
+    <ion-buttons end >
+         <button continue >add new</button>
+      </ion-buttons>    
+  </div> fab-top 
+  <button fab fab-right color="continue" (click)="addNewOrders()" is-active="false"> 
+    <ion-icon name="md-add"></ion-icon> 
+  </button>
+-->
+  <ion-fab right bottom>
+    <button ion-fab color="continue" (click)="addNewOrders()"  is-active="false">
+      <ion-icon name="md-add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

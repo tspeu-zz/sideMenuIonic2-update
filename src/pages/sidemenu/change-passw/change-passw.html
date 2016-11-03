@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="change-passw">
+  <div class="logo">
+     <h1 >Change Password</h1>
+  </div>
+  <ion-list>
+    <ion-item-divider text-wrap>
+       Your password must conform the following:
+    </ion-item-divider>
+    <ion-item  text-wrap>
+        
+        It must be at least 8 characters long and cannot 15 characters, 
+        It must only contain numbers an letters
+        It must contain at least 1 number and letter,
+        It is case sensitive
+         
+    </ion-item>
+    <ion-item>
+      <ion-label stacked color="primary">New Password</ion-label>
+      <ion-input type="password"required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked color="primary">Confirm Password</ion-label>
+      <ion-input type="password"required></ion-input>
+    </ion-item>  
+  </ion-list>
+
+   <div><!--(click)="goHome()"-->
+      <button ion-button color="danger" menuToggle>Cancel</button>
+      <button ion-button continue (click)="passSuccess()">Continue</button>
+    </div> 
+
+</ion-content>

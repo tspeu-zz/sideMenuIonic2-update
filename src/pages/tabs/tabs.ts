@@ -5,8 +5,8 @@ import {Component, AfterViewInit} from '@angular/core';
 //import {ShareAccount} from '../share/share';
 //import {CurrentPage} from '../current/current';
 
-import {Page1} from '../page1/page1';
-import {Page2} from '../page2/page2';
+//import {Page1} from '../page1/page1';
+//import {Page2} from '../page2/page2';
 
 import {AccountsPage , CurrentPage, ShareAccount} from '../models/index';
 

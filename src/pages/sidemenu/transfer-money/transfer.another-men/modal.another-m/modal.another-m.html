@@ -1,0 +1,53 @@
+<!--Generated jm_b-->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="modalBetwA">
+  <!-- <div class="logo">
+     <h1>Transfer</h1>between my accounts
+  </div>
+-->
+  <ion-list *ngFor = "let info of data">
+  	<ion-card>	
+  	<ion-card-header text-center class="text-header">
+  		Transfer 
+  	</ion-card-header>	
+  <ion-item no-lines >
+      			<img src="img/logonw6.jpg" class="image-logo">
+    </ion-item>
+		<ion-card-content class="text-card">
+		    <h2>From {{info.fromA }} account:</h2>
+		    <h1>052020502</h1>
+		    <h2>To {{info.toA}} account: </h2>
+		    <h1>05202888</h1>
+		    <p>Reason: {{info.text}}</p>
+		    <p>Ammount :</p>
+		    <h1>{{info.tranAmmount}} {{info.typeDiv}} </h1>
+		    <p>Date: {{info.tranDate}}</p> 
+
+		 </ion-card-content>
+  	</ion-card>	
+
+    <div>  
+      <button  color="primary" menuToggle >Menu</button>
+      <button  color="danger" nav-pop>Cancel</button>
+      <button  color="continue" (click)="successTransaction()">Continue</button>
+  	</div>
+  </ion-list>
+
+</ion-content>

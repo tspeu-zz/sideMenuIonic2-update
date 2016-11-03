@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="trans-enquiry">
+    <div class="logo">
+     <h1>Transaction Enquiry</h1>
+    </div>
+      
+
+<div class="content-style">
+ <ion-card> 
+  <ion-item-group>
+    <ion-item>
+      <ion-label>From Account</ion-label>
+        <ion-select [(ngModel)]="accounts"  okText="Continue" cancelText="Cancel"><!--multiple="true"-->
+          <ion-option value="share">Share</ion-option>
+          <ion-option value="current">Current</ion-option>
+          <ion-option value="other">Other</ion-option>       
+        </ion-select>
+    </ion-item>
+<!--
+  <ion-row radio-group [(ngModel)]="accountRadio">
+    <ion-col ion-item>
+      <ion-radio value="share"></ion-radio>
+      <ion-label >Share</ion-label>
+    </ion-col>
+    <ion-col ion-item>
+     <ion-radio value="current"></ion-radio>
+      <ion-label >Current</ion-label>
+    </ion-col>
+    <ion-col ion-item>
+      <ion-radio value="other"></ion-radio>
+      <ion-label>Other</ion-label>
+    </ion-col>
+  </ion-row>  
+ -->  
+
+
+
+    <ion-item-divider color="lightPrimary">
+      Date Range (Optional)
+    </ion-item-divider>
+
+      <ion-item class="text-date">
+        <ion-label>From:</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="fromDate"></ion-datetime>
+      </ion-item>
+<!--pickerFormat -->
+
+      <ion-item class="text-date"> 
+        <ion-label>To:</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="toDate"></ion-datetime>
+      </ion-item>
+
+    
+    <ion-item-divider color="lightPrimary">
+      Amount Range (Optional)
+   </ion-item-divider> 
+    <ion-item>
+      <ion-label>From:</ion-label>
+      <ion-input type="number" [(ngModel)]="fromAmount" placeholder="enter amount"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>To:</ion-label>
+      <ion-input type="number" [(ngModel)]="toAmount" placeholder="enter amount"></ion-input>
+    </ion-item>
+
+    <ion-item text-wrap no-padding>  
+      <ion-textarea placeholder="text optional" [(ngModel)]="msg"></ion-textarea>
+    </ion-item>
+
+  </ion-item-group>
+
+
+  <div>  
+      <button ion-button color="primary" menuToggle >Menu</button>
+      <button ion-button color="continue" (click)="selectAccount(accounts,accountRadio)">Continue</button>
+  </div>
+
+</ion-card>
+  
+</div>
+
+</ion-content>
+<!--(click)="cancelAction()" danger-->

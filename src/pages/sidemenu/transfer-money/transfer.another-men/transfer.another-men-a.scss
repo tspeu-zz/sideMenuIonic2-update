@@ -1,0 +1,32 @@
+.anotherMenA {
+
+.logo {
+  //background-color: #DEA02C;
+  padding: 10px ;
+  min-height: 10px;
+  text-align: center;
+  color: #005B91;
+  //font-family: 'Lucida Sans Unicode';
+  font-family: Lucida Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+
+}
+
+.button-style{
+	background-color: #005B91;
+	color: color($colors, primaryText);
+	font-size: 18px;
+	//font-family: 'Lucida Sans Unicode';
+  font-family: Lucida Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+//padding: 1px 0px 1px 0px;
+}
+p{
+	color: color($colors, primaryText);
+
+}
+h1{
+  font-size: 28px;
+  color: color($colors, primaryText);
+  //font-weight: bold;    
+} 
+
+}

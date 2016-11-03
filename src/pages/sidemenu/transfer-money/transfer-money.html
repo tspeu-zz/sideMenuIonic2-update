@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="transfer-money">
+  
+ <ion-list>
+    <div class="logo">
+     <h1>Transfer money</h1>
+    </div>
+  <div text-wrap>
+    <button ion-item class="button-style" (click)="gotoBetweenMyAccounts()">
+    <ion-avatar item-left>
+      <img src="./assets/img/refresh.png">
+    </ion-avatar>
+    Between my accounts
+    <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon> 
+    </button>
+
+    <button ion-item class="button-style"(click)="gotoAnotherMembA()">
+     <ion-avatar item-left>
+      <img src="./assets/img/another.png">
+    </ion-avatar>To another member's account
+    <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon>
+    </button>
+
+    <button ion-item class="button-style"(click)="gotoExterA()">
+    <ion-avatar item-left>
+      <img src="./assets/img/ext.png">
+    </ion-avatar>To an external account
+    <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon>
+    </button>
+  
+    <button ion-item class="button-style" (click)="gotoPayBill()"><ion-avatar item-left>
+      <img src="./assets/img/pay.png">
+    </ion-avatar>Pay a bill
+    <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon>
+    </button>
+  </div>
+
+  <div class="logo">
+    
+     <img src="./assets/img/logonw.jpg">
+    </div>
+
+</ion-list>
+</ion-content>

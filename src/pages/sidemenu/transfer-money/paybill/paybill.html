@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="confirmLogout()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="paybill">
+  <ion-list> 
+  <h1 class="logo">Pay a bill</h1>
+
+  <div text-wrap>
+    <button  ion-item class="button-style" (click)="gotoModal()">
+    	<h1>New Payment</h1>
+	    <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon>
+	    <p>Click here if you want to make a new payment to one of our pre-defined Billpay companies</p> 
+	     <p>Note: You will be provided the option of saving the details for future payments to the company</p>
+    </button>
+
+    <button ion-item class="button-style" (click)="gotoModal()"><h1>Use existing Payee</h1>
+	    <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon>
+	    <p >Click here to pay a Billpay company whose details you have peviously saved</p>
+    </button>
+  </div>
+</ion-list>
+</ion-content>

@@ -8,6 +8,8 @@ import { Page2 } from '../pages/page2/page2';
 import {LoginPage, TabsPage}  from '../pages/index';
 import {LoginProvider} from '../providers/index';
 
+import {ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage} from '../pages/sidemenu/index';
+
 //interface
 interface PageObj {title: string; component: any; icon: string;}
 
@@ -23,10 +25,10 @@ export class MyApp {
 
   appPages: PageObj[] = [
     { title: 'Home', component: TabsPage , icon: 'home'},
-    { title: 'Transfer Money',      component: "", icon: 'ios-cash'},
-    { title: 'Transaction Enquiry', component: "", icon: 'ios-card-outline'},
-    { title: 'Standing Orders',   component: "",  icon: 'md-calendar'},
-    { title: 'Change Password', component: "",  icon: 'md-contact'},
+    { title: 'Transfer Money',      component: TransferMoneyPage, icon: 'ios-cash'},
+    { title: 'Transaction Enquiry', component: TransEnquiryPage, icon: 'ios-card-outline'},
+    { title: 'Standing Orders',   component: StandingOrdersPage,  icon: 'md-calendar'},
+    { title: 'Change Password', component: ChangePasswPage,  icon: 'md-key'},
   ]; 
 
   loggedInPages: PageObj[] = [
