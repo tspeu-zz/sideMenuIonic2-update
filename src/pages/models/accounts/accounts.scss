@@ -1,0 +1,134 @@
+.logo-img {
+    text-align: center;
+}
+
+
+.accounts {
+
+    .textClient {
+        //background-color: #DEA02C;
+        padding: 10px;
+        min-height: 10px;
+        //text-align: center;
+        color: color($colors, secondary);
+        //font-family: 'Lucida Sans Unicode';
+        //font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-family: Lucida Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+
+    }
+    .bg-Buttons {
+        background: color($colors, primaryText);
+    }
+    .txt-Buttons {
+        //font-weight: bold;color($colors, primary)
+        //color: #fff;
+    }
+    .button-style {
+        //background-color: #005B91;
+        background : color($colors, primaryText);
+        //color: #fff;
+        //font-family: Lucida Sans ;
+        font-family: Lucida Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+
+        //padding: 1px 0px 1px 0px;
+    }
+    .Rtable {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        margin: 0 0 0 0;
+        //font-size: 16px;
+        //padding: 0;
+        //align-content: center 1;
+        //width: auto;
+        // height: auto;
+    }
+    .Rtable-cell {
+        // box-sizing: border-box ;//initial  inherit content-box 
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        //flex-wrap: wrap ;
+        font-size: 16px;
+        //width: 100%;
+        //padding: 0.8em 0.8em; 
+        //overflow:hidden  ;//visible visible   scroll auto   scroll
+        //list-style: none;
+        //border: solid 1px blue;
+        //background: rgba(112, 128, 144, 0.2);
+        //color: color($colors, primary);
+    }
+    .Rtable-cell > h1,
+    .Rtable-cell > h2,
+    .Rtable-cell > h3,
+    .Rtable-cell > h4,
+    .Rtable-cell > h5,
+    .Rtable-cell > h6 {
+        margin: 0;
+    }
+    /* Table column sizing
+================================== */
+    .Rtable--2cols > .Rtable-cell {
+        width: 45%;
+    }
+    .Rtable--3cols > .Rtable-cell {
+        width: 33.33%;
+    }
+    .Rtable--4cols > .Rtable-cell {
+        width: 25%;
+    }
+    .Rtable--5cols > .Rtable-cell {
+        width: 20%;
+    }
+    .Rtable--6cols > .Rtable-cell {
+        width: 16.6%;
+    }
+    /*============*/
+    .Rtable-cell--head {
+        background: color($colors, danger);
+        // border-color: #5a6673;
+        //border: solid 1px #5a6673;
+        //color: white;
+        font-size: 18px;
+        font-weight: bold;
+        //padding: 0px;
+    }
+    .Rtable-cell--foot {
+        background-color: #b8c0c8;
+        border-color: #a9b3bc;
+    }
+    .headerCard {
+        background: color($colors, light);
+        font-weight: bold;
+    }
+}
+
+
+/*
+.ion-navbar .ion-title
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+  .logo{
+      font-size: 20px;
+      //font-family: 'Century Gothic','sans-serif';
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+      font-weight: bold;
+      color :color($colors, primary);
+  }
+  */

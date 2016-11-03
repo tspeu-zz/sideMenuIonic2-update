@@ -5,15 +5,11 @@ import { StatusBar, Splashscreen ,Keyboard} from 'ionic-native';
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 
-import {LoginPage}  from '../pages/index';
-
+import {LoginPage, TabsPage}  from '../pages/index';
 import {LoginProvider} from '../providers/index';
 
 //interface
-interface PageObj {title: string;
-                   component: any;
-                   icon: string;
-                  }
+interface PageObj {title: string; component: any; icon: string;}
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +22,7 @@ export class MyApp {
   pages: Array<{title: string, component: any}>;
 
   appPages: PageObj[] = [
-    { title: 'Home', component: "", icon: 'home'},
+    { title: 'Home', component: TabsPage , icon: 'home'},
     { title: 'Transfer Money',      component: "", icon: 'ios-cash'},
     { title: 'Transaction Enquiry', component: "", icon: 'ios-card-outline'},
     { title: 'Standing Orders',   component: "",  icon: 'md-calendar'},

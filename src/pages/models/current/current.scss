@@ -1,0 +1,212 @@
+.logo-img{
+   text-align: center; 
+}
+
+
+.current{
+
+
+.bgCard{
+   background : color($colors, primaryText);
+}
+
+.textClient{
+  padding: 10px ;
+  min-height: 10px;
+  //text-align: center;
+  color: color($colors, secondary);
+  //font-family: 'Lucida Sans Unicode';
+  font-family: Lucida Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+
+  }
+
+.Rtable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  //margin: 0 0 0.5em 0;
+  padding: 0;
+}
+.Rtable-cell {
+  //box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 1;
+  //width: 100%;
+ // padding: 0.8em 0.8em;
+  overflow:visible ; //auto  visible   scroll auto   scroll
+  //list-style: none;
+  //border: solid 1px blue;lightSecondary
+  //background: rgba(112, 128, 144, 0.2);
+
+}
+
+.Rtable-cell2 {
+  //box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 1;
+  //width: 100%;
+ // padding: 0.8em 0.8em;
+  overflow:visible ; //auto  visible   scroll auto   scroll
+  //list-style: none;
+  //border: solid 1px blue;lightSecondary
+  //background: rgba(112, 128, 144, 0.2);
+  font-size: 18px;
+
+}
+
+.Rtable-cell > h1,
+.Rtable-cell > h2,
+.Rtable-cell > h3,
+.Rtable-cell > h4,
+.Rtable-cell > h5,
+.Rtable-cell > h6 {
+  margin: 0;
+}
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+.Rtable--4cols > .Rtable-cell {
+  width: 25%;
+}
+.Rtable--5cols > .Rtable-cell {
+  width: 20%;
+}
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%;
+}
+
+/*============*/
+.Rtable-cell--head {
+ background : color($colors, primary);
+// border-color: #5a6673;
+ //border: solid 1px #5a6673;
+  //color: white;
+ font-size: 18px;
+ font-weight: bold;
+//padding: 0px;
+}
+
+.Rtable-cell--foot {
+  background-color: #b8c0c8;
+  border-color: #a9b3bc;
+}
+
+.headerCard{
+//background : color($colors,light);
+//font-weight: bold;
+font-size: 16px;
+//color :color($colors,primary );
+}
+
+}
+/* 
+.card-bg{
+
+  background-color: #ededed;
+}
+.ion-col-date{
+      font-size: 18px;
+      font-family: 'Open Sans', 'sans-serif';
+      text-align: center;
+      color : grey;
+    }
+
+   .ion-col-header{
+     background-color: #041934;
+      font-size: 18px;
+      font-family: 'Arial', 'sans-serif';
+      text-align: center;
+      color : #fff;
+      //212121
+    } 
+
+    .ion-col-client{
+      font-size: 20px;
+      font-family: 'Arial', 'sans-serif';
+      text-align: center;
+      color : #005B91;
+      font-weight: bold;
+    }
+
+  .ion-col-title {
+    //background-color: pink;
+   //padding: 5px ;
+    //border: 1px solid gold;
+    //border-radius: 5px;
+    //text-align: right;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 18px;
+    text-align: left;
+    color : #fff;
+    }
+
+    .ion-col-content {
+    //background-color: pink;
+   //padding: 5px ;
+    //border: 1px solid gold;
+    //border-radius: 5px;
+    //text-align: right;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 16px;
+    text-align: left;
+    color : #005B91;
+    }
+
+
+
+
+    p {
+      color : #303F9F;
+      font-size: 25px;
+      font-family: 'Arial', 'sans-serif';
+      text-align: center;   
+    }
+    
+
+    .ion-col-1-debit {
+       text-align: right;
+       font-size: 18px;
+       //background-color: pink;
+       color: red;
+       font-family: 'Calibri', 'sans-serif';
+    }
+
+    .ion-col-credit {
+       text-align: right;
+       font-size: 16px;
+       //background-color: pink;
+       color: green;
+       font-family: 'Lucida Sans Unicode';
+    }
+
+    .ion-col-1-available {
+       text-align: left;
+       font-size: 18px;
+       //background-color: pink;
+       color: green;
+       font-family: 'Calibri', 'sans-serif';
+    }
+
+
+    .logo-img{
+      //min-height: 15px;
+      ///height: 170vh;
+      width: 15px;
+      margin: auto;
+      display: inline-block;
+      //height="40";
+  }
+*/

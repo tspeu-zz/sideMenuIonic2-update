@@ -1,0 +1,73 @@
+<ion-head>
+<ion-navbar  color="primary">
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  
+  <ion-title class="logo-img">
+    <img src="img/nwlogo.png"  height="30"> 
+  </ion-title>
+  <ion-buttons end>
+    <button ><!--(click)="confirmLogout()"-->
+     <ion-icon md="md-log-out"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+</ion-head>
+
+<ion-content class="rtshare">
+
+<!-- <div padding> searchPrompt-->
+<!-- 
+<ion-list *ngIf="numAccount" >
+
+ <ion-list-header  class="list-head"> 
+  Recent transactions for {{accShareNumber}}
+    <ion-buttons >
+    <button primary (click)="gotoTransaction()">Transaction Enquiry</button>
+  </ion-buttons>
+ </ion-list-header>
+
+
+<ion-card  *ngFor= " let recentT of rtShare">
+   <ion-card-header class="Rtable Rtable--2cols">
+   
+   <div style="order:0;font-size:16px;" class="Rtable-cell Rtable-cell--head">
+        {{recentT.date}} 
+  </div>
+
+   <div style="order:0;color:green; text-align: right;font-size:18px;" class="Rtable-cell Rtable-cell--head" *ngIf="recentT.credit">
+       {{recentT.credit}} €
+  </div>
+
+  <div style="order:0;color:red; text-align: right;font-size:18px;" class="Rtable-cell Rtable-cell--head" *ngIf="recentT.debit">
+       {{recentT.debit}} €
+ </div>
+   </ion-card-header>
+
+  <div style="order:0;" class="Rtable-cell R">
+  {{recentT.narrative}}
+  </div>
+
+<div class="Rtable Rtable--2cols">
+   <div style="order:0;" class="Rtable-cell ">
+       Balance:
+  </div>
+
+  <div style="order:0; text-align: right;font-size:18px;color:green;" class="Rtable-cell">
+    {{recentT.balance}}1€
+  </div>
+
+  
+</div>
+</ion-card>
+</ion-list> -->
+
+
+
+
+
+  
+</ion-content>
+
+ 

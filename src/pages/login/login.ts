@@ -4,7 +4,7 @@ import {Component, OnInit} from '@angular/core';
 //import {SignupPage} from '../signup/signup';
 //import {UserData} from '../../providers/user-data';
 //import {LoginProvider} from '../../providers/login-provider';
-
+import {SignupPage} from '../index';
 
 @Component({
   templateUrl: 'login.html'
@@ -28,9 +28,19 @@ submitted :boolean = false;
     //this.clearUser();
   }
 
-/*
+   todo = {}
+  logForm() {
+    console.log(this.todo)
+  }
+
+  goto() : void {
+      this.nav.push(SignupPage);
+  }
+
+
+ /*
   onLogin(form, user, pass) {
-    this.submitted = true;
+   this.submitted = true;
     this.login.username= user;
     this.login.password = pass;
     let okPass : boolean;

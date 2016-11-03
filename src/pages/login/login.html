@@ -39,9 +39,9 @@
           <button (click)="onLogin(loginForm, login.username, login.password )" type="submit"  large full continue
           [disabled]="!username1.valid || !password1.valid">Continue</button>
         </div>
-
-    </form>
-  
+-->
+  <!--  </form> -->
+<!--  
   <ion-card class="ion-card-img">
     <img src="img/logonw.jpg"/> 
   </ion-card>
@@ -51,6 +51,19 @@
   
     </div>
   </div>-->
+
+   <form (ngSubmit)="logForm()">
+      <ion-item padding>
+        <ion-label floating color="primary">Member Number</ion-label>
+        <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+      </ion-item>
+      <ion-item padding>
+        <ion-label floating color="primary">Password</ion-label>
+        <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+      </ion-item>
+      <button ion-button type="submit" large block color="continue" (click)="goto()">Add Todo</button>
+    </form>
+
 
 <div class="background">
     <img class="stretch" src="./assets/img/logonw.jpg">

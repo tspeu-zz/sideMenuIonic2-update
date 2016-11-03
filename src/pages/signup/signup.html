@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title class="logo-header-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login-page">
+
+  <ion-list>
+    <div class="logo">
+      <h1>SIGNIN</h1>
+    </div>
+   <!-- <form (ngSubmit)="logForm()">-->
+     
+
+
+      <div *ngFor=" let option of titles"> 
+        <ion-item>
+          <p class="labe1" color="primary">{{option.title}}</p>
+          <p> answer: {{option.answerOk}} </p>
+        </ion-item>
+    
+      </div> 
+
+      <ion-item padding>
+        <ion-label floating color="primary">Member Number</ion-label>
+        <ion-input type="text"  ></ion-input>
+      </ion-item><!--[(ngModel)]="signup.answer"-->
+     
+      <button ion-button  large block color="continue" (click)="goto()">Sign in</button>
+ <!--    </form> -->
+   
+  </ion-list>
+
+  <div class="background">
+    <img class="stretch" src="./assets/img/logonw.jpg">
+  </div>
+
+</ion-content>
+<!-- type="submit"name="title"
+ <form #signupForm="ngForm" novalidate>
+-->
+ 
+  <!--   
+        <ion-item>
+          <ion-input [(ngModel)]="signup.answer" ngControl="answer" type="password" #answers="ngForm" placeholder="type the answer here!" required>
+          </ion-input>
+        </ion-item>
+        <p [hidden]="answers.valid || submitted == false" danger padding-left>
+          Valid Answer is required
+        </p>
+     
+
+      <div>
+        <button (click)="onSignup(signupForm,signup.answer )" 
+        type="submit" continue large full [disabled]="!answers.valid" >Sign in</button>
+      </div>
+    </form>
+
+-->
+

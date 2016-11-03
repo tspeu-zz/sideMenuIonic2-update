@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="md-menu"></ion-icon>
+      </button>
+    </ion-buttons>
+   <ion-title class="logo-img">
+      <img src="./assets/img/nwlogo.png"  height="30"> 
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="logOut()">
+        <ion-icon name="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="current">
+  <h1 class="textClient" text-center> 
+    Current Accounts</h1> 
+  
+ <!--  <ion-list>    
+  <div no-padding >
+    <ion-card *ngFor=" let account of currents">
+      <ion-card-header class="headerCard">
+          {{account._accountTypeName}} 
+      </ion-card-header> 
+      <button ion-item text-wrap no-padding (click)=gotoPagertCurrent(account._accountNumber) class="bgCard">  
+        <div class="Rtable Rtable--2cols">
+          <div style="order:0;" class="Rtable-cell headerCard" >
+               {{account._accountTypeName}}
+          </div>
+          <div style="order:1; text-align: right;" class="Rtable-cell headerCard">{{account._accountNumber}}
+          </div>
+          <div style="order:1;" class="Rtable-cell">Available:
+          </div>
+          <div style="order:1; color:green;text-align: right;font-size:20px;" class="Rtable-cell2">{{account._accountBalanceAvailable}} €
+          </div>
+
+           <div style="order:1;" class="Rtable-cell">Balance:
+          </div>
+          <div style="order:1; color:green;text-align: right;font-size:20px;" class="Rtable-cell2">{{account._accountBalance}} €
+          </div>
+        </div>
+     </button> 
+    </ion-card>
+  </div>
+</ion-list>  -->
+</ion-content>
