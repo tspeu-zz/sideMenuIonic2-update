@@ -1,11 +1,9 @@
 //import {ViewChild} from '@angular/core'; 
-import { NavController, NavParams, App} from 'ionic-angular';//, Alert
+import { NavController, NavParams, App, AlertController} from 'ionic-angular';//
 import {Component,  OnInit} from '@angular/core';
-//import {AccountService} from '../../services/account-service';
-//import {RtcurrentPage} from '../rtcurrent/rtcurrent';
-//import {LoginPage} from '../login/login';
+import {AccountService} from '../../../services/index';
 import {LoginPage} from '../../index';
-//import {RtcurrentPage} from './rtcurrent/index';
+import {RtcurrentPage} from './rtcurrent/index';
 
 
 @Component({
@@ -19,63 +17,58 @@ export class CurrentPage implements OnInit{
   //@ViewChild(Nav) nav: Nav;
 //private app: IonicApp,
 
-/*  private currents = [];
-  public data_error: Boolean = false;*/
+  private currents = [];
+  public data_error: Boolean = false;
 
-  constructor(
-    public nav : NavController,
-    public navParams: NavParams, public app: App
-    //,private _accountService : AccountService
-    ) {
-
-  	
-  }
+  constructor(public nav : NavController, public navParams: NavParams, 
+    public app: App, public _accountService : AccountService, 
+    public alert : AlertController) {}
 
    ngOnInit(){
-     //this.getCurrentAccounts();
+     this.getCurrentAccounts();
    }
 
-  //  getCurrentAccounts() {
-  //     this._accountService.getCurrentAccountType().subscribe(
-  //       data => { this.currents = data
-  //       console.log("accounts: " + JSON.stringify(this.currents)); 
+   getCurrentAccounts() {
+      this._accountService.getCurrentAccountType().subscribe(
+        data => { this.currents = data
+        console.log("accounts: " + JSON.stringify(this.currents)); 
         
-  //       },
-  //       err => { this.data_error = true }
-  //     );
-  //   }
+        },
+        err => { this.data_error = true }
+      );
+    }
 
-  //   public gotoPagertCurrent(num){
-  //     let numAc = num;
-  //     this.nav.push(RtcurrentPage, { paramUser: num }); 
-  //     console.info("go to RECENTSHARE "+num);
-  //   }
+    public gotoPagertCurrent(num){
+      let numAc = num;
+      this.nav.push(RtcurrentPage, { paramUser: num }); 
+      console.info("go to RECENTSHARE "+num);
+    }
 
-  // /*alert logOut*/
-  // public confirmLogout() :void {
-  //   let alert = Alert.create({
-  //   title: 'Confirm Log out',
-  //   message: 'Do you want to log out?',
-  //   buttons: [
-  //     {
-  //       text: 'Cancel',
-  //       role: 'cancel',
-  //       handler: () => {
-  //         console.log('Cancel clicked');
-  //       }
-  //     },
-  //     {
-  //       text: 'Accept',
-  //       handler: () => {
-  //         //this.logOut();
-  //         this.nav.rootNav.setRoot(LoginPage);
-  //         console.log('Ok clicked');
-  //         }
-  //     }
-  //   ]
-  // });
-  //     this.nav.present(alert);
-  // }  
+  /*alert logOut*/
+  public confirmLogout() :void {
+    let alert = this.alert.create({
+    title: 'Confirm Log out',
+    message: 'Do you want to log out?',
+    buttons: [
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+      },
+      {
+        text: 'Accept',
+        handler: () => {
+          //this.logOut();
+          this.nav.setRoot(LoginPage);
+          console.log('Ok clicked');
+          }
+      }
+    ]
+  });
+      alert.present();
+  }  
 
   public logOut() :void {  
       //this.nav.setRoot(LoginPage);

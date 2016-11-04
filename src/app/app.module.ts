@@ -11,6 +11,9 @@ import {ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage
 
 import {Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA} from '../pages/sidemenu/transfer-money/index';
 
+import {AccountService} from '../services/index';
+import {RtcurrentPage} from '../pages/models/current/rtcurrent/index';
+import {rtSharePage} from '../pages/models/share/rtshare/rtshare';
 //import {ModalBetwA} from '../pages/sidemenu/transfer-money/paybill/index';
 //import {ModalBetwA} from '../pages/sidemenu/transfer-money/paybill/index';
 
@@ -24,7 +27,8 @@ import {Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA} from '../pa
     LoginPage, SignupPage, TabsPage,
     AccountsPage, CurrentPage, ShareAccount,
     ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage,
-    Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA
+    Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA,
+    RtcurrentPage, rtSharePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -37,8 +41,9 @@ import {Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA} from '../pa
     LoginPage, SignupPage, TabsPage,
     AccountsPage, CurrentPage, ShareAccount,
     ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage,
-    Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA
+    Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA,
+     RtcurrentPage, rtSharePage
   ],
-  providers: [LoginProvider]
+  providers: [LoginProvider, AccountService]
 })
 export class AppModule {}
