@@ -32,7 +32,7 @@ export class MyApp {
   ]; 
 
   loggedInPages: PageObj[] = [
-    { title: 'Logout', component: LoginPage, icon: 'log-out' }
+    { title: 'Logout', component: LoginPage, icon: 'md-log-out' }
   ];
 
   isLoggedIn : boolean = false;

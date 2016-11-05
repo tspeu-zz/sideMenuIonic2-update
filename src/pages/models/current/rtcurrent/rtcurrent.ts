@@ -1,31 +1,30 @@
-import { NavController, NavParams} from 'ionic-angular';//*, Alert
-import  {Component,OnInit} from '@angular/core';//, AfterViewInit
-//import {AccountService} from '../../services/account-service';
-//import {LoginPage} from '../login/login';
-//import {TransEnquiryPage} from '../sidemenu/trans-enquiry/trans-enquiry';
+import { NavController, NavParams, AlertController} from 'ionic-angular';//*, Alert
+import  {Component,OnInit, AfterViewInit} from '@angular/core';//
+import {AccountService} from '../../../../services/account-service';
+import {LoginPage} from '../../../index';
+import {TransEnquiryPage} from '../../../sidemenu/index';
 
 @Component({
   templateUrl: 'rtcurrent.html',
   providers :[]//AccountService
 })
-export class RtcurrentPage implements OnInit{//, AfterViewInit
-	/*private rtCurrent =[];
+export class RtcurrentPage implements OnInit, AfterViewInit{//
+	private rtCurrent =[];
 	private accCurrent =[];
 	private otra=[];
 	public data_error: Boolean = false;
 
-	private accNumber :string ;*/
+	private accNumber :string ;
 
-  constructor(public nav: NavController,public navParams: NavParams
-  	 		  //,private _accountService : AccountService
-  	 		  ) {}
-/*
+  constructor(public nav: NavController,public navParams: NavParams,
+  	 		  public _accountService : AccountService, public alert: AlertController) {}
+
 	ngAfterViewInit(){
 		console.log("AfterViewInit recenCurrenTransactions");
 	}
-*/
+
   	ngOnInit(){
-  	/* 	console.log("on init ---------------");
+  	 	console.log("on init ---------------");
   	 	this.getCurrentrt();
   	 	console.log("---otra----");
   //recibo  la cuanta clik como parammetro	 	
@@ -48,12 +47,12 @@ export class RtcurrentPage implements OnInit{//, AfterViewInit
 		//this._accountService.getAccCurrentRT();
 		//this._accountService.getCurrentRecentTransactionACCOUNT();
 		//this.getAccCurrentrt2();	
-		*/
+		
   	}
 
 //
 
-/*
+
 //get share transaccion from json file  ()JSON.stringify(this.rtCurrent)
 	getCurrentrt(){
 		this._accountService.getAllCurrentRecentTransaction().subscribe(
@@ -80,11 +79,11 @@ export class RtcurrentPage implements OnInit{//, AfterViewInit
 		},
 		err => { this.data_error = true }
 		);
-	}*/
+	}
 /*alert logOut*/
-/*
+
 	public confirmLogout() :void {
-	    let alert = Alert.create({
+	    let alert = this.alert.create({
 	    title: 'Confirm Log out',
 	    message: 'Do you want to log out?',
 	    buttons: [
@@ -99,13 +98,13 @@ export class RtcurrentPage implements OnInit{//, AfterViewInit
 	        text: 'Accept',
 	        handler: () => {
 	          //this.logOut();
-	          this.nav.rootNav.setRoot(LoginPage);
+	          this.nav.setRoot(LoginPage);
 	          console.log('Ok clicked');
 	          }
 	      }
 	    ]
 	  });
-      	this.nav.present(alert);
+      	alert.present();
   	}
 
 	gotoTransaction() {
@@ -113,10 +112,10 @@ export class RtcurrentPage implements OnInit{//, AfterViewInit
 		this.nav.push(TransEnquiryPage);
 
 	}
-*/	
+	
 
 }
-/* girtmobile @ jm_b 2016*/
+//* girtmobile @ jm_b 2016*/
 
 
 /*muestraTodo(){

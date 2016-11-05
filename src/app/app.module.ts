@@ -14,7 +14,7 @@ import {Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA} from '../pa
 import {AccountService} from '../services/index';
 import {RtcurrentPage} from '../pages/models/current/rtcurrent/index';
 import {rtSharePage} from '../pages/models/share/rtshare/rtshare';
-//import {ModalBetwA} from '../pages/sidemenu/transfer-money/paybill/index';
+import {ModalBetwA} from '../pages/sidemenu/transfer-money/transfer.betw-my/index';
 //import {ModalBetwA} from '../pages/sidemenu/transfer-money/paybill/index';
 
 
@@ -28,7 +28,8 @@ import {rtSharePage} from '../pages/models/share/rtshare/rtshare';
     AccountsPage, CurrentPage, ShareAccount,
     ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage,
     Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA,
-    RtcurrentPage, rtSharePage
+    RtcurrentPage, rtSharePage,
+    ModalBetwA
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -42,7 +43,8 @@ import {rtSharePage} from '../pages/models/share/rtshare/rtshare';
     AccountsPage, CurrentPage, ShareAccount,
     ChangePasswPage, StandingOrdersPage, TransEnquiryPage, TransferMoneyPage,
     Paybill, TransferAnotherMenA, TransferBetwMyA, TransferExtA,
-     RtcurrentPage, rtSharePage
+     RtcurrentPage, rtSharePage,
+     ModalBetwA
   ],
   providers: [LoginProvider, AccountService]
 })

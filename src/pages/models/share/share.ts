@@ -26,9 +26,9 @@ export class ShareAccount implements OnInit{
      
 
    ngOnInit(){
-   this.presentLoading()
+   //this.presentLoading()
     this.getShareAccounts();
-   this.shareAccount="";
+    this.shareAccount="";
    // getNumAccount(shareAccount);
   }
 
@@ -49,7 +49,7 @@ export class ShareAccount implements OnInit{
  */
   gotoShareRT(num){
       let numAc = num;   
-      this.nav.push(rtSharePage , {paramUser: num});
+      this.nav.push(rtSharePage , {paramUser: numAc});
       console.info("go to recent transaction share page");
   }
 

@@ -11,13 +11,17 @@
         Menu
     </ion-list-header>
     <button ion-item menuClose *ngFor=" let p of appPages" (click)="openPage2(p)">
-        <ion-icon item-left primary [name]="p.icon"></ion-icon>
+        <ion-icon item-left color="primary" [name]="p.icon"></ion-icon>
         {{p.title}}
     </button>
     </ion-list>
 
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+       <ion-list-header style="background-color: #005b91;color:#fff;">
+        Banking Log out
+      </ion-list-header>
+      <button ion-item  menuClose ion-item *ngFor="let p of loggedInPages" (click)="openPage(p)">
+        <ion-icon item-left [name]="p.icon" color="primary"></ion-icon>
         {{p.title}}
       </button>
     </ion-list>

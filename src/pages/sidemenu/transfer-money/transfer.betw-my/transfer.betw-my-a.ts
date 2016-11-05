@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController ,AlertController} from 'ionic-angular';
 import {LoginPage} from '../../../login/login';
-//import {ModalBetwA} from './index';
+import {ModalBetwA} from './index';
 
 
 @Component({
@@ -62,8 +62,8 @@ constructor(public nav: NavController, public alert: AlertController) {}
      this.msg="transfer";
     }
 
-   //this.getData();
-   //this.nav.push(ModalBetwA ,{allData : this.getData()});
+   this.getData();
+   this.nav.push(ModalBetwA ,{allData : this.getData()});
    //this.nav.push(ModalBetwA, {allData : this.getData()});fromA: this.fromAccount , 
   }
 
